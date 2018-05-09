@@ -1,2 +1,13 @@
-1，spring boot 入门（部署）
-2，spring boot aop
+入门（热部署，部署）
+接口（json，redirect，注解的含义）
+aop
+mybatis
+mongodb
+redis
+
+SpringBootApplication包及包以下
+
+整合上面的内容，加上博客，写一个大概的框架
+单元测试
+
+最佳实践http://blog.didispace.com/springbootproject/
