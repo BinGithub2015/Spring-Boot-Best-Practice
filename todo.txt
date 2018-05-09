@@ -5,6 +5,8 @@ mybatis
 mongodb
 redis
 
+看到Spring Boot中使用@Async实现异步调用
+
 SpringBootApplication包及包以下
 
 整合上面的内容，加上博客，写一个大概的框架

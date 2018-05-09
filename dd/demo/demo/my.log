@@ -1,0 +1,134 @@
+2018-05-09 22:36:30.023  INFO 16156 --- [main] com.example.demo.DemoApplication         : Starting DemoApplication on LAPTOP-64VTS9GL with PID 16156 (started by 17893 in E:\IntelliJ IDEA Community Edition 2018.1\IdeaProjects\Spring-Boot-Demo\dd\demo\demo)
+2018-05-09 22:36:30.039  INFO 16156 --- [main] com.example.demo.DemoApplication         : No active profile set, falling back to default profiles: default
+2018-05-09 22:36:30.096  INFO 16156 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b44655e: startup date [Wed May 09 22:36:30 CST 2018]; root of context hierarchy
+2018-05-09 22:36:32.328  INFO 16156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-05-09 22:36:32.353  INFO 16156 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-05-09 22:36:32.356  INFO 16156 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.29
+2018-05-09 22:36:32.366  INFO 16156 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\Java\jdk1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;E:\Python27\;E:\Python27\Scripts;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;E:\TortoiseGit\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;E:\apache-maven-3.5.2\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;E:\OpenVPN\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Users\17893\AppData\Local\Microsoft\WindowsApps;E:\Python27;;E:\Microsoft VS Code\bin;.]
+2018-05-09 22:36:32.526  INFO 16156 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-05-09 22:36:32.526  INFO 16156 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2430 ms
+2018-05-09 22:36:32.729  INFO 16156 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-05-09 22:36:32.745  INFO 16156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-09 22:36:32.745  INFO 16156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-09 22:36:32.745  INFO 16156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-09 22:36:32.745  INFO 16156 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-09 22:36:33.315  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.example.demo.HelloController.index()
+2018-05-09 22:36:33.315  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.example.demo.web.UserController.putUser(java.lang.Long,com.model.User)
+2018-05-09 22:36:33.315  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.example.demo.web.UserController.deleteUser(java.lang.Long)
+2018-05-09 22:36:33.315  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[GET]}" onto public java.util.List<com.model.User> com.example.demo.web.UserController.getUserList()
+2018-05-09 22:36:33.315  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users],methods=[POST]}" onto public java.lang.String com.example.demo.web.UserController.postUser(com.model.User)
+2018-05-09 22:36:33.315  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.model.User com.example.demo.web.UserController.getUser(java.lang.Long)
+2018-05-09 22:36:33.330  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-05-09 22:36:33.330  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-05-09 22:36:33.330  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-05-09 22:36:33.330  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-05-09 22:36:33.330  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-09 22:36:33.330  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-09 22:36:33.518  INFO 16156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-09 22:36:33.737  INFO 16156 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4b44655e: startup date [Wed May 09 22:36:30 CST 2018]; root of context hierarchy
+2018-05-09 22:36:33.799  INFO 16156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-09 22:36:33.799  INFO 16156 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-09 22:36:33.987  INFO 16156 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-05-09 22:36:34.002  INFO 16156 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-05-09 22:36:34.018  INFO 16156 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: index belongs to groups: [[ResourceGroup{groupName='hello-controller', position=0, controller=com.example.demo.HelloController}]] 
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.example.demo.web.UserController}]] 
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.example.demo.web.UserController}]] 
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.example.demo.web.UserController}]] 
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.example.demo.web.UserController}]] 
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller', position=0, controller=com.example.demo.web.UserController}]] 
+2018-05-09 22:36:34.034  INFO 16156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller Description: user-controller Position: 0
+2018-05-09 22:36:34.049  INFO 16156 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/hello-controller Description: hello-controller Position: 0
+2018-05-09 22:36:34.065  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-09 22:36:34.065  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-05-09 22:36:34.065  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-09 22:36:34.065  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-05-09 22:36:34.081  INFO 16156 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /hello.com.example.demo.HelloController.index.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.081  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /hello.com.example.demo.HelloController.index.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.081  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.096  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-05-09 22:36:34.127  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-09 22:36:34.127  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-05-09 22:36:34.127  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-09 22:36:34.127  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-05-09 22:36:34.127  INFO 16156 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.com.example.demo.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.127  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.com.example.demo.web.UserController.deleteUser.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.127  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2018-05-09 22:36:34.143  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller
+2018-05-09 22:36:34.143  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.model.User(true)
+2018-05-09 22:36:34.143  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.model.User(true)
+2018-05-09 22:36:34.143  INFO 16156 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.model.User(true)
+2018-05-09 22:36:34.143  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.model.User(true)
+2018-05-09 22:36:34.174  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.model.User(true)
+2018-05-09 22:36:34.174  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.model.User(true)
+2018-05-09 22:36:34.174  INFO 16156 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.model.User(true)
+2018-05-09 22:36:34.174  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.model.User(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.com.example.demo.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.com.example.demo.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.model.User>(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<com.model.User>(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.model.User>(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<com.model.User>(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.model.User(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.model.User(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.model.User>(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<com.model.User>(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.model.User(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.model.User(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.com.example.demo.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.com.example.demo.web.UserController.getUserList.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.model.User(false)
+2018-05-09 22:36:34.190  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users.com.example.demo.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users.com.example.demo.web.UserController.postUser.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.model.User(false)
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.com.example.demo.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.206  INFO 16156 --- [main] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.com.example.demo.web.UserController.putUser.DefaultGenericTypeNamingStrategy
+2018-05-09 22:36:34.221  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2018-05-09 22:36:34.221  INFO 16156 --- [main] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller
+2018-05-09 22:36:34.284  INFO 16156 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-05-09 22:36:34.299  INFO 16156 --- [main] com.example.demo.DemoApplication         : Started DemoApplication in 4.636 seconds (JVM running for 5.329)
