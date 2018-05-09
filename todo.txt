@@ -11,3 +11,5 @@ SpringBootApplication包及包以下
 单元测试
 
 最佳实践http://blog.didispace.com/springbootproject/
+
+最佳实践的项目结构 目录结构
