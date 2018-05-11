@@ -1,0 +1,8 @@
+MySQL mybatis自动生成器
+接口(接口缓存)
+权限系统
+通用工作流程
+MongoDB
+Redis
+单元测试
+swagger
