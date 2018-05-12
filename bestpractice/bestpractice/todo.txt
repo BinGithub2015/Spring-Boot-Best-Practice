@@ -6,3 +6,6 @@ MongoDB
 Redis
 单元测试
 swagger
+
+
+mybatis自动生成器http://www.cnblogs.com/lichenwei/p/4145696.html
