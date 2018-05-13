@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -26,7 +27,7 @@ public class LoginController extends BaseRestController {
         String resource = "sqlMapConfig.xml";
         InputStream inputStream = null;
         try {
-            inputStream = Resources.getResourceAsStream(resource);
+            inputStream = Resources.getResourceAsStream(resource);;
         } catch (IOException e) {
             e.printStackTrace();
             return response(StateCode.SUCCESS, System.getProperty("user.dir"));
