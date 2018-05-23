@@ -19,7 +19,7 @@ import java.io.InputStream;
 @SpringBootTest
 public class ApplicationTests {
 
-	@Test
+	@JacksonTester
 	public void contextLoads() {
 
         String resource = "src/sqlMapConfig.xml";
