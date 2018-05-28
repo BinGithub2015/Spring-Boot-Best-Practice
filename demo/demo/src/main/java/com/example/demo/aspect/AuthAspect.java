@@ -3,6 +3,7 @@ package com.example.demo.aspect;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -11,6 +12,7 @@ import javax.servlet.http.Cookie;
 
 @Aspect
 @Component
+@Order(2)
 public class AuthAspect {
 
     @Pointcut("execution(public * com.example.demo.controller.*.*.*(..))")
