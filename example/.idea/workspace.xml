@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dce98d-7b8e-4c07-87ff-ebc38b8d0181" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/TagMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/TagMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/TagUrlMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/TagUrlMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/UrlMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/UrlMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/TagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/TagMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/TagUrlMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/TagUrlMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UrlMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UrlMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UserTagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UserTagMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/aspect/AuthAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/aspect/AuthAspect.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/generator/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -268,7 +261,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spring-boot实战随书源码/spring-boot实战随书源码/SourceCode/ch8_6_2" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -706,7 +699,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/generator/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
         </state>
       </provider>
     </entry>
