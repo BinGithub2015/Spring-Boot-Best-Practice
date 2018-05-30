@@ -1,4 +1,4 @@
-package com.example.demo.db.model;
+package com.example.demo.model;
 
 /**
  *

@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dce98d-7b8e-4c07-87ff-ebc38b8d0181" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/generator/Generator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/log.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/log.log.2018-05-25.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/log.log.2018-05-28.0.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/controller/admin/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/controller/admin/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/controller/error/ErrorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/controller/error/ErrorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/db/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/db/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
