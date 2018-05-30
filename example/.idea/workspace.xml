@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80dce98d-7b8e-4c07-87ff-ebc38b8d0181" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/TagMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/TagMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/TagUrlMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/TagUrlMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/UrlMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/UrlMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/java/com/example/demo/dao/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/TagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/TagMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/TagUrlMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/TagUrlMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UrlMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UrlMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UserTagMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/demo/src/main/resources/mapper/UserTagMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
