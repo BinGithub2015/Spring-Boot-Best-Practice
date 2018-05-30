@@ -16,7 +16,7 @@ public class ErrorController extends BaseController {
     public Response get() {
         int a = 0;
         int b = 1 / a;
-        return response(StateCode.SUCCESS, new User("a", 1));
+        return response(StateCode.SUCCESS,"test");
     }
 
 }

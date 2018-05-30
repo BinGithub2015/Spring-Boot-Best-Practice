@@ -14,7 +14,7 @@ public class AdminController extends BaseController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public Response get() {
-        return response(StateCode.SUCCESS, new User("a", 1));
+        return response(StateCode.SUCCESS,"test");
     }
 
 }
