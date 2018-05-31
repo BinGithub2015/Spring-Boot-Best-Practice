@@ -37,6 +37,7 @@ public class AuthAspect {
             if(cookie.getName().equals("user_uuid")){
                 String uuid = cookie.getValue();
                 valOpsStr.get("user:");
+
             }
         }
         //todo：权限判断
