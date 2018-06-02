@@ -1,5 +1,7 @@
 package com.example.demo.aspect;
 
+import com.example.demo.model.User;
+import com.example.demo.service.UserService;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -20,10 +22,13 @@ import javax.servlet.http.Cookie;
 public class AuthAspect {
 
     @Autowired
-    StringRedisTemplate stringRedisTemplate;
+    private StringRedisTemplate stringRedisTemplate;
 
     @Resource(name="stringRedisTemplate")
-    ValueOperations<String,String> valOpsStr;
+    private ValueOperations<String,String> valOpsStr;
+
+    @Autowired
+    private UserService userService;
 
     @Pointcut("execution(public * com.example.demo.controller.*.*.*(..))")
     public void auth() {
@@ -36,8 +41,13 @@ public class AuthAspect {
         for (Cookie cookie:cookies) {
             if(cookie.getName().equals("user_uuid")){
                 String uuid = cookie.getValue();
-                valOpsStr.get("user:");
-
+                String key = "user:" + uuid;
+                String value =  valOpsStr.get(key);
+                Integer id = Integer.valueOf(value);
+                if(id  == null)break;
+                User user = userService.findById(id);
+                if(user == null)break;
+                attributes.getRequest().setAttribute("user",user);
             }
         }
         //todo：权限判断
