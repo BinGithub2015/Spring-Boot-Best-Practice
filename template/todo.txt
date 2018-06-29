@@ -1,0 +1,8 @@
+权限管理系统
+mybatis生成器
+rabbit
+redis
+MongoDB
+quart
+flaway
+mdc
