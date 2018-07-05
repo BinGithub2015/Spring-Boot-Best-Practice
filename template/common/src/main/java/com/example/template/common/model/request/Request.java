@@ -2,6 +2,8 @@ package com.example.template.common.model.request;
 
 /**
  * @author bin
+ *
+ * 可以作为基类，继承并扩展不同需求的请求
  */
 public class Request {
     /**
@@ -19,7 +21,7 @@ public class Request {
      */
     private String os;
     /**
-     * 地理位置
+     * 地理坐标
      */
     private String coordinate;
     /**
