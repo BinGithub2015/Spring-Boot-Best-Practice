@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  * @author bin
  */
 @RestController
-@RequestMapping("/api/v1/test")
+@RequestMapping("/api/test")
 public class TestController extends AbstractController {
 
     @RequestMapping(value = "/get",method = RequestMethod.GET)
