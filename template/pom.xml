@@ -9,7 +9,7 @@
     <packaging>pom</packaging>
     <version>1.0.0</version>
     <modules>
-        <module>controller</module>
+        <module>app</module>
         <module>dao</module>
         <module>service</module>
         <module>mq</module>
