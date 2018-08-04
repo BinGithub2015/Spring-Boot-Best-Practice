@@ -10,9 +10,9 @@ public class Sender {
 
     @Autowired
     private RabbitTemplate rabbitTemplate;
-    @Value("")
+    @Value("${rabbitmq.exchange}")
     String exchange;
-    @Value("")
+    @Value("${rabbitmq.rountingKey}")
     String routingKey;
 
     public void sender(Object object) {

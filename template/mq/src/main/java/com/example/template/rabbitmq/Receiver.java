@@ -6,9 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class Receiver {
 
-    @RabbitListener(queues = "")
+    @RabbitListener(queues = "${rabbitmq.listener.queue}")
     public void receive(String in) throws InterruptedException {
-        //do some things
+        System.out.println(in);
     }
 
 }
