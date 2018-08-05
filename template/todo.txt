@@ -1,6 +1,4 @@
-权限管理系统
-mybatis生成器
-rabbit
+权限管理
 redis
 MongoDB
 quart
