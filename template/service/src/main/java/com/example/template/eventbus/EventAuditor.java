@@ -21,7 +21,7 @@ public class EventAuditor {
 
     @Subscribe
     @AllowConcurrentEvents
-    private void auditString(String msg){
+    public void auditString(String msg){
         logger.info(msg);
     }
 
