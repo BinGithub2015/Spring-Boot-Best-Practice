@@ -23,10 +23,6 @@ public class FutureUtilsTest {
         ListenableFuture f1 = FutureUtils.submit(() -> System.out.println("this is runnable"));
 
         System.out.println("end  1");
-        //阻塞
-        while (!f1.isDone()) {
-            logger.debug("state:{}", f1.get());
-        }
 
         System.out.println("-----------");
 
@@ -37,9 +33,7 @@ public class FutureUtilsTest {
                 }
         );
 
-
         logger.debug("end  2");
-        //阻塞
         logger.debug("result:{}", f2.get());
 
         System.out.println("-----------");
