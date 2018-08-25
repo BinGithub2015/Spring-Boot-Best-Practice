@@ -1,14 +1,18 @@
 package com.example.template.common.utils;
 
+import com.google.common.util.concurrent.FutureCallback;
 import com.google.common.util.concurrent.ListenableFuture;
+import org.checkerframework.checker.nullness.qual.Nullable;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 
 
 public class FutureUtilsTest {
 
+    private Logger logger = LoggerFactory.getLogger(this.getClass());
     private static boolean flag = true;
 
     @Test
@@ -19,87 +23,46 @@ public class FutureUtilsTest {
         ListenableFuture f1 = FutureUtils.submit(() -> System.out.println("this is runnable"));
 
         System.out.println("end  1");
-
+        //阻塞
         while (!f1.isDone()) {
-            System.out.printf("state:{}", f1.get());
+            logger.debug("state:{}", f1.get());
         }
 
         System.out.println("-----------");
 
         ListenableFuture<Boolean> f2 = FutureUtils.submit(() -> {
+                    Thread.sleep(7000);
                     System.out.println("this is callable");
                     return true;
                 }
         );
 
 
+        logger.debug("end  2");
+        //阻塞
+        logger.debug("result:{}", f2.get());
 
-        System.out.println("end  2");
-        while (!f2.isDone()) {
-            System.out.printf("state:{}", f2.get());
-        }
-        System.out.println();
-        System.out.printf("result:{}",f2.get());
-        System.out.printf(f2.get().toString());
+        System.out.println("-----------");
 
+        ListenableFuture<Boolean> f3 = FutureUtils.submit(() -> {
+            logger.debug("this is callable");
+            return false;
+        }, new FutureCallback<Boolean>() {
+            @Override
+            public void onSuccess(@Nullable Boolean aBoolean) {
+                logger.debug("onSuccess:{}", aBoolean);
+            }
 
-//
-//        Futures.addCallback(booleanTask, new FutureCallback<Boolean>() {
-//            @Override
-//            public void onSuccess(Boolean result) {
-//                System.err.println("BooleanTask: " + result);
-//            }
-//
-//            @Override
-//            public void onFailure(Throwable t) {
-//            }
-//        });
-//
-//        // 任务2
-//        ListenableFuture<String> stringTask = FutureUtils.submit(new Callable<String>() {
-//            @Override
-//            public String call() throws Exception {
-//                return "Hello World";
-//            }
-//        });
-//
-//        Futures.addCallback(stringTask, new FutureCallback<String>() {
-//            @Override
-//            public void onSuccess(String result) {
-//                System.err.println("StringTask: " + result);
-//            }
-//
-//            @Override
-//            public void onFailure(Throwable t) {
-//            }
-//        });
-//
-//        // 任务3
-//        ListenableFuture<Integer> integerTask = FutureUtils.submit(new Callable<Integer>() {
-//            @Override
-//            public Integer call() throws Exception {
-//                return new Random().nextInt(100);
-//            }
-//        });
-//
-//        Futures.addCallback(integerTask, new FutureCallback<Integer>() {
-//            @Override
-//            public void onSuccess(Integer result) {
-//                try {
-//                    Thread.sleep(500);
-//                } catch (InterruptedException e) {
-//                    e.printStackTrace();
-//                }
-//                System.err.println("IntegerTask: " + result);
-//            }
-//
-//            @Override
-//            public void onFailure(Throwable t) {
-//            }
-//        });
-//
-//        // 执行时间
-//        System.err.println("time: " + (System.currentTimeMillis() - t1));
+            @Override
+            public void onFailure(Throwable throwable) {
+                logger.debug(throwable.getMessage());
+
+            }
+        });
+
+        logger.debug("end  3");
+        //阻塞
+        logger.debug("result:{}", f3.get());
 
     }
 }
