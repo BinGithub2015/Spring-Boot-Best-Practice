@@ -1,15 +1,25 @@
-package com.example.template.common.utilities;
+package com.example.template.common.utils;
 
 import com.google.common.util.concurrent.*;
+import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.*;
 
-public class FutureUtiltiles {
+public class FutureUtils {
 
-    private org.slf4j.Logger logger = LoggerFactory.getLogger(FutureUtiltiles.class);
+    private static Logger logger;
 
-    private final static ListeningExecutorService service = MoreExecutors.listeningDecorator(Executors.newCachedThreadPool());
+    private static ListeningExecutorService service;
+
+    public static void init(){
+        if(logger == null){
+            logger = LoggerFactory.getLogger(FutureUtils.class);
+        }
+        if(service == null){
+            service = MoreExecutors.listeningDecorator(Executors.newCachedThreadPool());
+        }
+    }
 
     public static ListenableFuture<?> submit(Runnable var1){
         return service.submit(var1);

@@ -3,6 +3,3 @@ MongoDB
 quart
 flaway
 mdc
-maven 不同的项目用不同的jar包
-jackjson
-guaua

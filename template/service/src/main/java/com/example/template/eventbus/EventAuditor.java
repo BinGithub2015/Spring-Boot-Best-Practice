@@ -1,6 +1,6 @@
 package com.example.template.eventbus;
 
-import com.example.template.common.utilities.EventBusUtilties;
+import com.example.template.common.utils.EventBusUtils;
 import com.google.common.eventbus.AllowConcurrentEvents;
 import com.google.common.eventbus.DeadEvent;
 import com.google.common.eventbus.Subscribe;
@@ -16,7 +16,7 @@ public class EventAuditor {
 
     @PostConstruct
     private void init(){
-        EventBusUtilties.register(this);
+        EventBusUtils.register(this);
     }
 
     @Subscribe

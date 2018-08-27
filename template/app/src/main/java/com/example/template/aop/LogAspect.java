@@ -23,7 +23,7 @@ public class LogAspect {
         try {
             Object[] args = point.getArgs();
             for (Object arg:args) {
-
+                logger.info("log:{}",arg);
             }
             Response response = (Response) point.proceed();
         } catch (Throwable throwable) {
