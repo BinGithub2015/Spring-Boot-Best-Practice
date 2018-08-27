@@ -16,9 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController extends AbstractController {
 
     @RequestMapping(value = "/get",method = RequestMethod.GET)
-    public Response get(){
+    public String get(){
 
-        return null;
+        return "test";
     }
 
 }
