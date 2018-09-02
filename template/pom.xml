@@ -15,6 +15,7 @@
         <module>mq</module>
         <module>common</module>
         <module>scheduler</module>
+        <module>share</module>
     </modules>
 
     <parent>

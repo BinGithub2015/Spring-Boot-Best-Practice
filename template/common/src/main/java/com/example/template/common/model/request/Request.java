@@ -1,10 +1,13 @@
 package com.example.template.common.model.request;
 
+import lombok.Data;
+
 /**
  * @author bin
  *
  * 可以作为基类，继承并扩展不同需求的请求
  */
+@Data
 public class Request {
     /**
      * 请求的时间戳
@@ -28,55 +31,4 @@ public class Request {
      * 设备唯一标志
      */
     private String imei;
-
-    public String getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(String timestamp) {
-        this.timestamp = timestamp;
-    }
-
-    public String getVersion() {
-        return version;
-    }
-
-    public void setVersion(String version) {
-        this.version = version;
-    }
-
-    public String getOs() {
-        return os;
-    }
-
-    public void setOs(String os) {
-        this.os = os;
-    }
-
-    public String getCoordinate() {
-        return coordinate;
-    }
-
-    public void setCoordinate(String coordinate) {
-        this.coordinate = coordinate;
-    }
-
-    public String getImei() {
-        return imei;
-    }
-
-    public void setImei(String imei) {
-        this.imei = imei;
-    }
-
-    @Override
-    public String toString() {
-        return "Request{" +
-                "timestamp='" + timestamp + '\'' +
-                ", version='" + version + '\'' +
-                ", os='" + os + '\'' +
-                ", position='" + coordinate + '\'' +
-                ", imei='" + imei + '\'' +
-                '}';
-    }
 }

@@ -7,10 +7,8 @@ import lombok.Data;
  */
 @Data
 public class Response<T> {
-
     private Integer code;
     private Boolean succeed;
     private T data;
     private String msg;
-
 }

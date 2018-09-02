@@ -1,17 +1,15 @@
 package com.example.template.concurrent;
 
-import com.example.template.aop.LogAspect;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.concurrent.Callable;
 
+@Slf4j
 public class DemoTask  implements Callable<String> {
-
-    private org.slf4j.Logger logger = LoggerFactory.getLogger(LogAspect.class);
 
     @Override
     public String call() throws Exception {
-        logger.debug("this is DemoTask");
+        log.debug("this is DemoTask");
         return "demo";
     }
 

@@ -12,6 +12,7 @@
         <module name="mq" />
         <module name="scheduler" />
         <module name="service" />
+        <module name="share" />
       </profile>
     </annotationProcessing>
   </component>

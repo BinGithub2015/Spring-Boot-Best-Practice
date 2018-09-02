@@ -32,7 +32,7 @@
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>dao</artifactId>
+            <artifactId>service</artifactId>
             <version>1.0.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->

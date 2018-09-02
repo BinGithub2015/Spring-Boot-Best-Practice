@@ -1,6 +1,0 @@
-权限管理系统
-quartz
-rabbitmq
-热部署
-Linux部署
-swagger

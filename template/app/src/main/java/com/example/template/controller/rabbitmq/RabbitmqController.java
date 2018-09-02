@@ -1,5 +1,7 @@
 package com.example.template.controller.rabbitmq;
 
+import com.example.template.common.constant.ResponseCode;
+import com.example.template.common.model.response.Response;
 import com.example.template.controller.AbstractController;
 import com.example.template.rabbitmq.Sender;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +15,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class RabbitmqController extends AbstractController {
 
     @Autowired
-    Sender sender;
+    private Sender sender;
 
     @RequestMapping(value = "/sender/{msg}",method = RequestMethod.GET)
-    public String sender(@PathVariable String msg){
+    public Response sender(@PathVariable String msg){
         sender.sender(msg);
-        return "ok";
+        return response(ResponseCode.SUCCESS,null);
     }
 
 }

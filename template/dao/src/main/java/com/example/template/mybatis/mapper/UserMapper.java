@@ -1,6 +1,6 @@
 package com.example.template.mybatis.mapper;
 
-import com.example.template.mybatis.domain.User;
+import com.example.template.common.model.orm.User;
 import org.apache.ibatis.annotations.*;
 
 @Mapper
