@@ -52,6 +52,7 @@ public class LogAspect {
             log.error("URI:{},METHOD:{},REQUEST:{},THROWABLE",uri,method,request,throwable);
         }
         log.info("URI:{},METHOD:{},REQUEST:{},RESPONSE:{}",uri,method,request,response);
+        MDC.clear();
         return response;
     }
 
